@@ -1,0 +1,10 @@
+Package: Car_Pool
+Type: Package
+Title: Car Pool Demo
+Version: 1.0.0
+Author: Benjamin Gross
+Maintainer: Benjamin Gross <ben@benbox.org>
+Description: Car Pooling Application that allows to find, propose and book business trips to share resources such as a vehicle, fuel and drivers to reduce costs, eco-system impact and to increase the opportunities to reach a destination.
+License: GNU General Public License v3.0
+Encoding: UTF-8
+LazyData: true
