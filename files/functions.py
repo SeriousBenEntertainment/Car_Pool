@@ -14,6 +14,7 @@ from email.mime.base import MIMEBase
 from email.mime.text import MIMEText
 import os
 import subprocess
+import webbrowser
 
 
 ## All functions used exclusively in Car Fleet Management
@@ -105,7 +106,11 @@ def header(title, data_desc, expanded = True):
             return f.read()
 
     def f1_callback():
-        subprocess.Popen('HH files/Car_Pool.chm::Introduction.html', shell = False)
+        try:
+            subprocess.Popen('HH files/Car_Pool.chm::Introduction.html', shell = False)
+        except Exception as e:
+            print('Exception in `f1_callback` function. Error: ', e)
+            webbrowser.open_new_tab('https://www.benbox.org/Car_Pool/Introduction.html')
 
     with st.expander("Header", expanded = expanded):
         ## Header information
