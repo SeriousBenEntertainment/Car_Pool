@@ -124,6 +124,7 @@ def header(title, data_desc, expanded = True):
         txt.write('You can directly access the help through pressing')
         but.button("`F1`", on_click = f1_callback)
         components.html(read_index_html(), height = 0, width = 0,)
+        st.markdown('or opening a <a href="https://www.benbox.org/Car_Pool/Introduction.html" target="_blank">seperate tab in your browser</a>, if this is not working.', unsafe_allow_html = True)
 
 #Function: landing_page = Shows landing page
 def landing_page(page):
